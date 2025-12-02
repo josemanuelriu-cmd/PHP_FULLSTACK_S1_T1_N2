@@ -2,37 +2,40 @@
     box-sizing: border-box;
 }
 body{
-    max-width:1200px;    
+    max-width: 1400px;
     padding: 0px;
     margin: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 header{
-    background-color: white;
+    background-color: white;    
+    max-width: 1200px;
+    width: 100%;
     padding: 20px;    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap:116px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-image: url('../Images/header.jpg');
-    /*background-size: cover;*/
     background-position: center;
     height: 400px;
-
+    align-self: center;
 }
 .sup{
-    /*background-color: #2C4059;*/
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap:20px;
+    max-width:1200px;
 }
 .logo,
 .social,
 .nav{
-    /*background-color: #EA5455;*/
     padding: 10px 0px 10px 10px;  
     display: flex;
     flex-grow:1;
@@ -66,6 +69,9 @@ header{
     color: grey;
     margin-right: 10px;
 }
+.social{
+    justify-content: flex-end;
+}
 .social img{
     display: flex;
     flex-direction: row;
@@ -86,8 +92,9 @@ header{
     display: flex;
     flex-direction: row;
     width: 90%;
-    height: 75px;
+    height: 125px;
     align-self: center;
+    max-width: 1000px;
 }
 .banner{
     color: #F59C7B;
@@ -100,83 +107,131 @@ header{
     font-size: 28px;
     opacity: 0.8;
 }
-
 .banner img{
     width: 100%;
     max-width: 1200px;
     height: 100%;
 }
 .central_body{
-    background-color: black;
-    padding: 20px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     max-width: 1200px;
+     align-self: center;
 }
 .left{
-    background-color: #4E4E6A;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-grow:3;       
+    background-color: #D8D7D7;
+    padding-top: 10px;
 }
 .article{
-    background-color: #1F6CB0;
-    padding: 20px 0px 20px 10px;    
+    background-color: #F5F1F1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 10px;
     width: 50%;
     max-width: 48%;
     margin-bottom: 15px;   
+    gap: 5px;
+}
+.image{
+    position: relative;
+    display: flex;
+    /*background-image: url('../Images/sakura.jpg');
+    background-position: center;*/
+}
+.image img{
+    width: 100%;    
+}
+.image .date{
+    color: #D0C77C;
+    position: absolute;
+    top: 80%;
+    left: 3%;;
+}
+.subtittle{
+    background-color: #F08080;
+    color: white;
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+.art_text{
+    column-count: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #787777;
+}
+.more a{
+    color: #9F9E9E;
+    text-decoration: none;
 }
 .art_right{
     margin-right: 0px;
 }
 .navigation{
-    background-color: #71A3C4;
     width: 100%;
     padding: 5px 5px;
     padding-left: 10px;
+    text-align: center;
 }
 .right{
-    background-color: #F63F51;
-    padding: 20px;
+    background-color:#D8D7D7;
+    padding: 5px 0px;
     display: flex;
     flex-direction: column;
-    flex-grow:1;        
+    flex-grow:1;     
+    min-width: 250px;   
 }
-.publicidad{
-    background-color: #FED700;
+.publicidad1{
     padding: 5px 5px;
-    margin-bottom: 15px;
     padding: 15px;
     padding-left: 10px;
     justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+.publicidad2{
+    padding: 5px 5px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 footer{
-    background-color: black;
-    padding: 20px;
+    background-color: #D8D7D7;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 15px;
+    margin-bottom: 20px;
+    align-self: center;
 }
 .footer{
-    background-color: #F0E78C;
-    padding: 5px 5px;
-    padding-left: 10px;
+    background-color: #F5F1F1;    
+    color: #787777;
+    margin: 0px 10px;
+    text-align: center;
+    padding: 10px 0px;
+    
 }
 
 @media only screen and (max-width: 768px) {
 
-    body,
+    body{
+        max-width:768px;   
+        /*height: 470px;
+        gap: 80px;*/      
+    }
     header{
         max-width:768px;   
         height: 470px;
-        gap: 80px;
+        gap: 20px;
     }
     .sup{
         flex-direction: column;     
